@@ -15,7 +15,7 @@ body{
   box-sizing: border-box;
 }
 
-.container div {
+.container div{
   border: 3px solid #081B57;
   border-radius: 10px;
   padding:4px;
@@ -109,16 +109,13 @@ nav a:hover::before{
 .studyImage{
   grid-column-start: 1;
   grid-column-end: 2;
-  justify-items: center;
-  align-content: center;
 }
 
 .studyCopy{
   grid-column-start: 2;
   grid-column-end: 4;
-  padding: 3px 10px 10px 3px;
+  padding: 3px;
 }
-
 
 .footer{
   grid-column-start: 1;
@@ -127,8 +124,16 @@ nav a:hover::before{
   color: aliceblue;
 }
 
-@media only screen and (max-width: 420px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
+@media only screen and (max-width: 600px){
+
+.studyImage{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.studyCopy{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 3px;
+}
 }
